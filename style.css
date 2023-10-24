@@ -39,6 +39,13 @@
   margin: 15px 16px;
   position: relative;
   top: 45vh;
+  text-shadow: 2px 3px 3px blue;
+}
+
+.h1 h1:hover {
+  transform: rotate(4deg);
+  transition: .5s;
+  color: blueviolet;
 }
 
 .container {
@@ -77,6 +84,7 @@
   }
 
 }
+
 
 
 

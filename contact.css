@@ -1,189 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="contact.css">
-  <title>Contact</title>
-</head>
-<body>
-  <div class="navbar">
-    
-    <div class="dropdown">
-      <button class="dropbtn">Media Sosial
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="https://www.instagram.com/rkaa_alff_13/">Instagram</a>
-      </div>
-    </div>
-  </div>
 
-  </div>
-  <div class="container">
-
-    <div class="card-container">
-        <div class="left">
-            <div class="left-container">
-              
-            </div>
-        </div>
-        <div class="right">
-            <div class="right-container">
-                <form action="">
-                    <h2 class="lg-view">Hubungi Kami</h2>
-                    <h2 class="sm-view">Hubungi Kami</h2>
-                    <input type="text" placeholder="Nama">
-                    <input type="email" placeholder="Alamat Email">
-                    <input type="text" placeholder="Perusahaan" autocomplete="off">
-                    <input type="phone" placeholder="Telepone" autocomplete="off">
-                    <textarea rows="10" placeholder="Pesan"></textarea>
-                    <button>Kirim</button>
-                </form>
-                <style>
-                  * {
-    box-sizing: border-box;
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    background: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    height: 100vh;
-    margin: -20px 0 50px;
-    padding: 10px;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
 }
 
-.container {
-    background-color: gray;
-    border-radius: 5px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 522px;
-    min-width: 370px;
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.card-container {
-    display: flex;
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.left {
-    flex: 1;
-    height: 480px;
-    background-color: tomato;
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 
-.right {
-    display: flex;
-    flex: 1;
-    height: 460px;
-    background-color: gray;
-    justify-content: center;
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-.left {
-    display: flex;
-    flex: 1;
-    height: 522px;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-
-.left-container {
-    height: 50%;
-    width: 80%;
-    text-align: center;
-    line-height: 22px
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.left p {
-    font-size: 0.9rem;
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.right-container {
-    width: 70%;
-    height: 80%;
-    text-align: center;
-}
-
-input,
-textarea {
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-    font-size: 0.8rem;
-}
-
-input:focus,
-textarea:focus {
-    outline: 1px solid #00b4cf;
-}
-
-button {
-    border-radius: 20px;
-    border: 1px solid #00b4cf;
-    background-color: #00b4cf;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: transform 80ms ease-out;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.7;
-}
-
-textarea {
-    height: 90px;
-}
-/* responsive */
-
-@media only screen and (max-width: 600px){
-    .left {
-        display: none;
-        size: 20px;
-    }
-
-
-    .lg-view {
-        display: none;
-        size: 20px;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .sm-view {
-        display: none;
-        position: relative;
-    }
-}
-
-                </style>
-            </div>
-        </div>
-    </div>
-
-</div>
-</body>
-</html>
